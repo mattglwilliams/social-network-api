@@ -13,7 +13,10 @@ For this project, I have created a social network web application where users ca
 
 This app will allow you to view, create, update and delete your users, thoughts and reactions in an API client like Insomnia.
 
-You can see a full walk through of this app in action here -
+You can see walk through videos of this app in action below:
+
+- User routes: https://drive.google.com/file/d/1FFRCKZ8pwpacGdRlOsYjZNZBgy73d5Tv/view
+- Thought routes: https://drive.google.com/file/d/1Rxi_cGrm1IBbjm8xbD0S79qyahFJxfvo/view
 
 ## Installation
 
