@@ -1,29 +1,4 @@
-const { Schema, model } = require("mongoose");
-
-// schema for the thought model
-const thoughtSchema = new Schema(
-  {
-    thoughtText: {
-      type: String,
-      required: true,
-      minlength: 1,
-      maxlength: 280,
-    },
-    username: {
-      type: String,
-      required: true,
-      ref: "User",
-    },
-    reactions: [reactionSchema],
-  },
-  {
-    toJSON: {
-      virtuals: true,
-    },
-    id: false,
-  },
-  { timestamps: true }
-);
+const { Schema, model, Types } = require("mongoose");
 
 // schema for reaction sub-documents
 const reactionSchema = new Schema(
@@ -42,13 +17,44 @@ const reactionSchema = new Schema(
       type: String,
       required: true,
     },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
   },
   {
     toJSON: {
       getters: true,
     },
+  }
+);
+
+// schema for the thought model
+const thoughtSchema = new Schema(
+  {
+    thoughtText: {
+      type: String,
+      required: true,
+      minlength: 1,
+      maxlength: 280,
+    },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
+    username: {
+      type: String,
+      required: true,
+      ref: "User",
+    },
+    reactions: [reactionSchema],
   },
-  { timestamps: true }
+  {
+    toJSON: {
+      virtuals: true,
+    },
+    id: false,
+  }
 );
 
 //initializing our Thought model
