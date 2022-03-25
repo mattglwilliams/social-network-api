@@ -16,7 +16,7 @@ This app will allow you to view, create, update and delete your users, thoughts 
 You can see walk through videos of this app in action below:
 
 - User routes: https://drive.google.com/file/d/1nxEHr4ND3ZutthmUwVNzm1fi5Drn4wei/view
-- Thought routes: https://drive.google.com/file/d/1Rxi_cGrm1IBbjm8xbD0S79qyahFJxfvo/view
+- Thought routes: https://drive.google.com/file/d/14cB3OXwwIFTtfEc9pdKVQjVxI5-Lna9V/view
 
 ## Installation
 
